@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GrakovNe's File Storage service</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href=css/bootstrap.min.css>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href=css/styles.css>
+</head>
+<body>
+
+<div id="content-container" class="center-vertical">
+    <div class="page-title text-center">
+        <h1 class="page-hint">PUT YOUR FILE HERE</h1>
+    </div>
+
+
+    <div class="uploaded-file-link-container input-group input-item col-sm-8 col-sm-offset-2 input-group-lg">
+            <span id="uploaded-status" class="input-group-addon">URL:</span>
+            <input id="url-container" type="text" class="form-control" placeholder="http://grakovne.org">
+            <div id="copy-to-clipboard-button" class="input-group-addon"><i class="custom-button fa fa-clipboard"
+                                                                            aria-hidden="true"></i></div>
+        </div>
+
+        <div class="uploading-bar-container input-item col-sm-8 col-sm-offset-2 input-group-lg">
+            <div id="uploading-bar" class="progress uploading-bar">
+                <div id="uploading-bar-child" data-percentage="0%" class="progress-bar progress-bar-info"
+                     role="progressbar"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<script src="/js/application.js"></script>
+
+</body>
+</html>
